@@ -157,5 +157,6 @@
     <string name="ant_book_read">读书听书</string>
     <string name="omegakoi_town">支小镇</string>
     <string name="consume_gold">支付宝消费金</string>
+    <string name="batch_hire_animal">一键捉鸡</string>
 
 </resources>
