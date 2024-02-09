@@ -1427,8 +1427,8 @@ public class Config {
             c.cooperateWaterList = new ArrayList<>();
         if (c.cooperateWaterNumList == null)
             c.cooperateWaterNumList = new ArrayList<>();
-        c.ancientTree = true;
-        c.reserve = true;
+        c.ancientTree = false;
+        c.reserve = false;
         if (c.reserveList == null)
             c.reserveList = new ArrayList<>();
         if (c.reserveCountList == null)
@@ -1461,7 +1461,7 @@ public class Config {
         c.receiveFarmToolReward = true;
         c.recordFarmGame = true;
         c.kitchen = true;
-        c.useNewEggTool = true;
+        c.useNewEggTool = false;
         c.harvestProduce = true;
         c.donation = true;
         c.answerQuestion = true;
@@ -1692,7 +1692,7 @@ public class Config {
             }
             //Log.i(TAG, jn_cooperateWaterList + ":" + String.join(",", config.cooperateWaterList));
 
-            config.ancientTree = jo.optBoolean(jn_ancientTree, true);
+            config.ancientTree = jo.optBoolean(jn_ancientTree, false);
             //Log.i(TAG, jn_ancientTree + ":" + config.ancientTree);
 
             config.ancientTreeCityCodeList = new ArrayList<>();
@@ -1717,7 +1717,7 @@ public class Config {
             }
             //Log.i(TAG, jn_giveEnergyRainList + ":" + String.join(",", config.giveEnergyRainList));
 
-            config.reserve = jo.optBoolean(jn_reserve, true);
+            config.reserve = jo.optBoolean(jn_reserve, false);
             //Log.i(TAG, jn_reserve + ":" + config.reserve);
 
             config.reserveList = new ArrayList<>();
@@ -1818,7 +1818,7 @@ public class Config {
             config.kitchen = jo.optBoolean(jn_kitchen, true);
             //Log.i(TAG, jn_kitchen + ":" + config.kitchen);
 
-            config.useNewEggTool = jo.optBoolean(jn_useNewEggTool, true);
+            config.useNewEggTool = jo.optBoolean(jn_useNewEggTool, false);
             //Log.i(TAG, jn_useNewEggTool + ":" + config.useNewEggTool);
 
             config.harvestProduce = jo.optBoolean(jn_harvestProduce, true);
